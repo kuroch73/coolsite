@@ -15,10 +15,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from about.views import index
+from django.urls import path,include
+from about.views import index, pageNotFound
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('about/', index),
+    path('', include('about.urls')),
 ]
+handler404 = pageNotFound
