@@ -16,10 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from about.views import index, pageNotFound
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('about.urls')),
+    path('about/', include('about.urls')),
+    path('master/', include('master.urls')),
 ]
-handler404 = pageNotFound
