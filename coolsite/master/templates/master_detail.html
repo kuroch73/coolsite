@@ -2,18 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Наши мастера</title>
+    <title>Title</title>
 </head>
 <body>
-{% for master in masters %}
-<div>
-    <h2>{{ master.first_name }}
+<h2>{{ master.first_name }}
     {{ master.last_name }}</h2>
-    <a href="{% url 'master' master.id %}"> Подробнее о мастере </a>
+
 <p>{{ master.service }}</p>
 <img src=" {{ master.photo.url }} ">
 <p>{{ master.content }}</p>
-</div>
-{% endfor %}
 </body>
 </html>

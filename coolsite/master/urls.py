@@ -1,8 +1,8 @@
-from django.urls import path, include
+from django.urls import path
 from .views import *
 
 urlpatterns = [
 
-    path('', Master.as_view(), name='master'),
-
+    path('', MasterList.as_view(), name='masters'),
+    path('master/<int:pk>/', MasterDetail.as_view(), name='master'),
     ]
