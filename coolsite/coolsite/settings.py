@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'about',
     'master',
     'service',
+    'vacancy',
 ]
 
 MIDDLEWARE = [

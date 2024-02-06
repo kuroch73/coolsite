@@ -13,7 +13,13 @@
 <p>{{ master.service }}</p>
 <img src=" {{ master.photo.url }} ">
 <p>{{ master.content }}</p>
+    {% for k,querySet in services.items %}
+    {% for service in querySet %}
+    <h3>{{ service.name }}</h3>
+    {% endfor %}
+    {% endfor %}
 </div>
+
 {% endfor %}
 </body>
 </html>

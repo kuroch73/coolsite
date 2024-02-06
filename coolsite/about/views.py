@@ -6,9 +6,6 @@ def index(request):
 def pageNotFound(request, exception):
     return HttpResponseNotFound('<h1>Страница не найдена</h1>')
 
+
 def about(request):
-    return render(request, 'about/header.html')
-def about(request):
-    return render(request, 'about/footer.html')
-def about(request):
-    return render(request, 'about/base.html')
+    return render(request, 'about.html')

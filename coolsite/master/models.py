@@ -9,6 +9,6 @@ class Masters(models.Model):
     time_update = models.DateTimeField(auto_now=True)
     is_published = models.BooleanField(default=True)
     content = models.TextField(blank=True)
-
+    #service = models.ManyToManyField()
     def __str__(self):
         return self.first_name

@@ -3,6 +3,6 @@ from .views import *
 
 urlpatterns = [
 
-    path('', ServiceList.as_view(), name='service'),
+    path('', VacancyList.as_view(), name='vacancy'),
 
     ]
