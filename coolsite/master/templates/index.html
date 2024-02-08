@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Наши мастера</title>
 </head>
 <body>
-{% for master in masters %}
+{% comment %}
+ {% for master in masters %}
 <div>
     <h2>{{ master.first_name }}
     {{ master.last_name }}</h2>
@@ -21,5 +22,16 @@
 </div>
 
 {% endfor %}
+{% endcomment %}
+   {% for assemble in assembles %}
+   <h2> {{ assemble.master.first_name }}</h2>
+   <h3> Услуги мастера</h3>
+
+   {% for service in assemble.service.all %}
+   <p> {{ service.name }} </p>
+{% endfor %}
+{% endfor %}
+
 </body>
+
 </html>
