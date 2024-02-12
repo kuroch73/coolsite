@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +10,7 @@
     {{ master.last_name }}</h2>
 
 <p>{{ master.service }}</p>
-<img src=" {{ master.photo.url }} ">
+<a class="nav-link" href="{% img/master1' %}"> </a>
 <p>{{ master.content }}</p>
 </body>
 </html>
