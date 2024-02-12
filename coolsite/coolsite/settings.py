@@ -54,6 +54,9 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'coolsite.urls'
+STATICFILES_DIRS = [
+   BASE_DIR / "static",
+]
 
 TEMPLATES = [
     {
