@@ -1,38 +1,25 @@
-<!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+{% extends 'coolsite/base.html' %}
+{% load static %}
+ {% block content %}
+
 <head>
     <meta charset="UTF-8">
     <title>Наши мастера</title>
 </head>
+<link rel="stylesheet" href="{% static 'style/style.css' %}">
 <body>
-{% comment %}
- {% for master in masters %}
-<div>
-    <h2>{{ master.first_name }}
-    {{ master.last_name }}</h2>
-    <a href="{% url 'master' master.id %}"> Подробнее о мастере </a>
-
-<p>{{ master.service }}</p>
-<img src=" {{ master.photo.url }} ">
-<p>{{ master.content }}</p>
-    {% for k,querySet in services.items %}
-    {% for service in querySet %}
-    <h3>{{ service.name }}</h3>
-    {% endfor %}
-    {% endfor %}
-</div>
-
-{% endfor %}
-{% endcomment %}
+{% load static %}
    {% for assemble in assembles %}
    <h2> {{ assemble.master.first_name }}</h2>
    <h3> Услуги мастера</h3>
-
+        <div class="col-1">
+        <img class="card_img " src=" {{ assemble.master.photo.url }} ">
+            </div>
    {% for service in assemble.service.all %}
    <p> {{ service.name }} </p>
 {% endfor %}
 {% endfor %}
 
 </body>
-
-</html>
+{% endblock %}

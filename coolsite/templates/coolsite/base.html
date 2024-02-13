@@ -1,10 +1,17 @@
-<!DOCTYPE html>
+
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
+{% include "coolsite/header.html" %}
 
+{% block content %}
+
+{% endblock content %}
+
+{% include "coolsite/footer.html" %}
 </body>
 </html>
