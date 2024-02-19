@@ -1,10 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
 </head>
 <body>
+<header>
+    <nav>
+            <a href="{% url 'about' %}" class="link">О нас</a>
+            <a href="{% url 'masters' %}" class="link"> Наши мастера </a>
+            <a href="{% url 'service' %}" class="link">Услуги</a>
+            <a href="{% url 'vacancy' %}" class="link">Вакансии</a>
+        </nav>
+    </header>
 
-</body>
-</html>

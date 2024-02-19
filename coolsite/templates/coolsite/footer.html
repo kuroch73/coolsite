@@ -1,7 +1,21 @@
+{% load static %}
 <footer class="mb-2 py-3 border-top border-dark">
     <div class="container">
+ </div>
+    <nav>
+    <ul class="social">
+        <li><a href="coolsite/media/vk.png"><ion-icon name="logo-vk"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-telegram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-ok"></ion-icon></a></li>
+</ul>
 
+            <a> href="{% url 'about' %}" </a>
+            <a> href="{% url 'masters' %}"  </a>
+            <a> href="{% url 'service' %}" </a>
+            <a> href="{% url 'vacancy' %}" </a>
+        </nav>
 
-            <p class="h-55" >Copyright © 2020 Readng BV.</p>
-
+</div>
+     <p class="h-55" >Copyright © 2020 Readng BV.</p>
     </div>
+</footer>

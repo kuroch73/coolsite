@@ -4,3 +4,19 @@
     object-fit: cover;
     border-radius: 6px;
 }
+.Link {
+ position: relative;
+    padding-left : 400px;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px;
+}
+.social {
+ position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;/*разрешен перенос на новую строку*/
+}
