@@ -1,15 +1,17 @@
 {% load static %}
+<link rel="stylesheet" href="{% static 'style/style.css' %}">
 <footer class="mb-2 py-3 border-top border-dark">
+
     <div class="container">
  </div>
     <nav>
     <ul class="social">
-        <li><a href="coolsite/media/vk.png"><ion-icon name="logo-vk"></ion-icon></a></li>
-        <li><a href="#"><ion-icon name="logo-telegram"></ion-icon></a></li>
-        <li><a href="#"><ion-icon name="logo-ok"></ion-icon></a></li>
+
+        <li class="social_tag"><img class="social_img" src="{% static 'image/vk.png' %}" alt=""> </li>
+
 </ul>
 
-            <a> href="{% url 'about' %}" </a>
+            <a href="{% url 'about' %}"> О нас </a>
             <a> href="{% url 'masters' %}"  </a>
             <a> href="{% url 'service' %}" </a>
             <a> href="{% url 'vacancy' %}" </a>

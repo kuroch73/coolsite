@@ -6,11 +6,12 @@
 }
 .Link {
  position: relative;
-    padding-left : 400px;
+    padding-left : 180px;
     top: 25%; /* 25% from the top */
     width: 100%; /* 100% width */
     text-align: center; /* Centered text/links */
     margin-top: 30px;
+    color : #fff
 }
 .social {
  position: relative;
@@ -19,4 +20,19 @@
     align-items: center;
     margin: 10px 0;
     flex-wrap: wrap;/*разрешен перенос на новую строку*/
+}
+.social_img {
+height : 50px;
+width : 50px;
+}
+header nav {
+width : 100%;
+padding : 10px 0 ;
+display : flex;
+justify-content : space-between ;
+background : black
+}
+body {
+padding : 0 ;
+margin : 0 ;
 }
