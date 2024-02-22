@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'master',
     'service',
     'vacancy',
+    'feedback',
+
 ]
 
 MIDDLEWARE = [

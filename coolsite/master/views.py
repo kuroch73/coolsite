@@ -15,3 +15,4 @@ class MasterList(ListView):
 class MasterDetail(DetailView):
     model = Masters
     template_name = 'master_detail.html'
+    context_object_name = 'master'

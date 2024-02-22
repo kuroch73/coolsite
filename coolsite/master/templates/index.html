@@ -12,7 +12,7 @@
 
 {% load static %}
    {% for assemble in assembles %}
-   <h2> {{ assemble.master.first_name }}</h2>
+<a href="{% url 'master' assemble.master.pk %}"><h2> {{ assemble.master.first_name }}</h2></a>
    <h3> Услуги мастера</h3>
         <div class="col-1">
         <img class="card_img " src=" {{ assemble.master.photo.url }} ">
