@@ -36,23 +36,22 @@ body {
 padding : 0 ;
 margin : 0 ;
 }
-orm{
-  margin:0 auto;
-  max-width:95%;
+.form-control
+.form-group {
+  margin:20px ;
+  width:400px;
   box-sizing:border-box;
   padding:40px;
   border-radius:5px;
-  background:RGBA(255,255,255,1);
-  -webkit-box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);
-  box-shadow:  0px 0px 15px 0px rgba(0, 0, 0, .45);
+
 }
 /* Стили полей ввода */
 .textbox{
   height:50px;
   width:30%;
   border-radius:3px;
-  border:rgba(0,0,0,.3) 2px solid;
-  box-sizing:border-box;
+
+
   font-family: 'Open Sans', sans-serif;
   font-size:18px;
   padding:10px;
@@ -61,8 +60,7 @@ orm{
 .message:focus,
 .textbox:focus{
   outline:none;
-   border:rgba(24,149,215,1) 2px solid;
-   color:rgba(24,149,215,1);
+
 }
 /* Стили текстового поля */
 .message{
@@ -84,7 +82,7 @@ orm{
 /* Базовые стили кнопки */
 .button{
   height:50px;
-  width:30%;
+  width:60%;
   border-radius:3px;
   border:rgba(0,0,0,.3) 0px solid;
   box-sizing:border-box;
