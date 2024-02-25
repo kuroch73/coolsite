@@ -37,6 +37,7 @@ padding : 0 ;
 margin : 0 ;
 }
 .form-control {
+  background : grey;
   height 5px;
   margin:10px ;
   width:500px;
@@ -45,7 +46,6 @@ margin : 0 ;
   border-radius:5px;
   margin-bottom:15px;
 }
-/* Стили полей ввода */
 .textbox{
   height:50px;
   width:300px;
@@ -55,32 +55,23 @@ margin : 0 ;
   padding:10px;
   margin-bottom:15px;
 }
-.message:focus,
-.textbox:focus{
-  outline:none;
-
 }
-/* Стили текстового поля */
 .message{
     background: pink;
     width:350px;
     height: 40px;
-
     box-sizing:border-box;
-
     font-size:18px;
     font-family: 'Open Sans', sans-serif;
-
     border-radius: 3px;
-    display:block;
+
     padding:10px;
     margin-bottom:10px;
     overflow:hidden;
 }
-/* Базовые стили кнопки */
 .button{
   height:50px;
-  width:60%;
+  width:100px;
   border-radius:3px;
   border:rgba(0,0,0,.3) 0px solid;
   box-sizing:border-box;
