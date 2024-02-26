@@ -24,41 +24,67 @@
 .social_img {
 height : 50px;
 width : 50px;
+display : flex;
+}
+.about_img {
+margin-top : 100px;
+padding : 10px;
+height : 500px;
+width : 500px;
 }
 header nav {
 width : 100%;
 padding : 10px 0 ;
 display : flex;
 justify-content : space-between ;
-background : black
+background-color : pink;
+}
+footer {
+ height: 120px;
+ border : top;
+
+ position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10
 }
 body {
 padding : 0 ;
 margin : 0 ;
 }
+aside {
+float : right;
+}
 .form-control {
-  background : grey;
-  height 5px;
+  background : pink;
+  height 3px;
   margin:10px ;
-  width:500px;
+  width:320px;
   box-sizing:border-box;
   padding:15px;
   border-radius:5px;
   margin-bottom:15px;
+  text-align:bottom;
+
+
+
 }
 .textbox{
+  align : center;
   height:50px;
   width:300px;
   border-radius:3px;
   font-family: 'Open Sans', sans-serif;
   font-size:18px;
-  padding:10px;
-  margin-bottom:15px;
-}
-}
+  padding:0px;
+  margin-bottom:25px;
+
+  }
+
 .message{
     background: pink;
-    width:350px;
+    width:300px;
     height: 40px;
     box-sizing:border-box;
     font-size:18px;
@@ -88,3 +114,4 @@ margin : 0 ;
 .button:hover{
   background:#80b438;
 }
+
