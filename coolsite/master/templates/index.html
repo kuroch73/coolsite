@@ -2,26 +2,29 @@
 {% extends 'coolsite/base.html' %}
 {% load static %}
  {% block content %}
-
-<head>
-    <meta charset="UTF-8">
-    <title>Наши мастера</title>
-</head>
-<link rel="stylesheet" href="{% static 'style/style.css' %}">
-<body>
-
-{% load static %}
    {% for assemble in assembles %}
-<a href="{% url 'master' assemble.master.pk %}"><h2> {{ assemble.master.first_name }}</h2></a>
-   <h3> Услуги мастера</h3>
-        <div class="col-1">
-        <img class="card_img " src=" {{ assemble.master.photo.url }} ">
+<div class="container">
+        <div class="row">
+        <div class="col">
+            <a href="{% url 'master' assemble.master.pk %}"><h2> {{ assemble.master.first_name }}</h2></a>
+            <h3> Услуги мастера</h3>
+            <div class="col-1">
+                <img class="card_img " src=" {{ assemble.master.photo.url }} ">
             </div>
-   {% for service in assemble.service.all %}
-   <p> {{ service.name }} </p>
+                {% for service in assemble.service.all %}
+                    <p> {{ service.name }} </p>
+                {% endfor %}
+        </div>
+        <form class="col">
 
+    <div class="mb-3">
+        <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="https://m.vk.com/away.php?to=https%3A%2F%2Fbeautybox.ru%2Fonline%2F42881&post=-80018840_1736">
+       Запись к мастеру
+        </a>
+    </div>
+    <button type="submit" class="btn btn-primary">Отправить</button>
+       </form>
+    </div>
+</div>
 {% endfor %}
-{% endfor %}
-
-</body>
 {% endblock %}

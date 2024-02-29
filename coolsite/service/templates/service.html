@@ -1,13 +1,9 @@
 {% extends 'coolsite/base.html' %}
 {% load static %}
  {% block content %}
-    <title>Услуги</title>
 
-</head>
-<body>
 {% for service in services %}
 <h2> {{ service.name }} </h2>
 {% endfor %}
-</body>
+
 {% endblock %}
-</html>

@@ -1,16 +1,14 @@
-<!DOCTYPE html>
+{% extends 'coolsite/base.html' %}
 {% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+ {% block content %}
+
+
     <title>О мастере </title>
-</head>
+
 <body>
-<h2>{{ master.first_name }}
-    {{ master.last_name }}</h2>
+<h2>{{ master.first_name }}</h2>
 
 <p>{{ master.service }}</p>
 
 <p>{{ master.content }}</p>
-</body>
-</html>
+{% endblock %}
