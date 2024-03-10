@@ -22,9 +22,17 @@
     flex-wrap: wrap;/*разрешен перенос на новую строку*/
 }
 .social_img {
-height : 50px;
-width : 50px;
+padding : 10px;
+height : 80px;
+width : 85px;
 display : flex;
+}
+.footer-text {
+padding : 10px ;
+display : right;
+
+text-align : left;
+font-family : ariel ;
 }
 .about_img {
 
@@ -40,6 +48,7 @@ justify-content : space-between ;
 background-color : pink;
 }
 footer {
+background : pink;
   left: 0;
   right: 0;
   bottom: 0;
