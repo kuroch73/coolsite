@@ -2,8 +2,14 @@
 {% load static %}
  {% block content %}
 
+
+
+<div class="form-control">
 {% for service in services %}
-<h2> {{ service.name }} </h2>
+<a href="{% url 'services' service.pk %}"><h2> {{ service.name }}</h2></a>
+
+<a><p>{{ srvice.content }}</p></a>
 {% endfor %}
 
+</div>
 {% endblock %}
