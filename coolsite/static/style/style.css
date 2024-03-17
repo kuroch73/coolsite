@@ -55,10 +55,15 @@ background : pink;
   z-index: 10
 }
 body {
-padding : 0 ;
-margin : 0 ;
-}
 
+height : 80% ;
+}
+.hero {
+background-color : #C3C3C3 ;
+background-size : contain ;
+height : 100% ;
+
+}
 .form-control {
   background : pink;
   height 3px;
@@ -72,7 +77,8 @@ margin : 0 ;
 
 }
 main {
-min-height : 80vh;
+height : 100%;
+display : block ;
 }
 .textbox{
   align : center;
@@ -121,4 +127,14 @@ list-style: none;
 .button:hover{
   background:#80b438;
 }
-
+ .wrapper {
+    max-width: 1140px;
+    padding: 20px;
+  }
+.category {
+ padding-top: 30px ;
+  padding-bottom: 30px ;
+}
+.row {
+width : 30% ;
+}
