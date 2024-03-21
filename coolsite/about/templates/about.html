@@ -13,7 +13,7 @@
           </div>
           <div class="col">
 
-          <form  action="{% url 'Feedback_view' %}" method="POST">
+          <form  action="{% url 'Feedback_view' %}" method="POST" id = "btnForm">
              {% csrf_token %}
              <div class="form-control">
                 <label> <input  name="name" placeholder="Укажите ваше имя!" class="textbox" > Ваше имя</label>
@@ -22,7 +22,7 @@
                 <label><input name="email" placeholder="Укажите ваш Email!" class="textbox" type="email" >Ваш email</label>
 
 
-                <label><input name="phone" placeholder="Укажите ваш телефон!" class="textbox" type="phone">Ваш телефон</label>
+                <label><input name="phone" placeholder="Укажите ваш телефон!" class="textbox tel" type="phone">Ваш телефон</label>
 
 
                 <label><input name="call_time" placeholder="Укажите время когда перезвонить" class="textbox" type="call_time">Время звока</label>

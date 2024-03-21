@@ -138,3 +138,14 @@ list-style: none;
 .row {
 width : 100% ;
 }
+.reply {
+position: fixed;
+top: 50%;
+left: 50%;
+transform :
+width: 35px;
+padding: 12px 0;
+text-align: center;
+background: #FF99FF;
+border-radius: 0 5px 5px 0;
+}
